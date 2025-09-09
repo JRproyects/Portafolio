@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joaquin Ruiz – Web Developer & IT Support</title>
+    <meta name="description"
+        content="Portafolio de Joaquin Ruiz: Web Developer & IT Support. Redes (MikroTik), desarrollo web full‑stack, automatización y soluciones escalables." />
+    <meta name="author" content="Joaquin Ruiz" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init('TU_USER_ID'); // lo obtienes en EmailJS
+        })();
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="brand" aria-label="Ir al inicio">
+                <span class="dot"></span>
+                <span>Joaquin&nbsp;Ruiz</span>
+            </a>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#skills">Tecnologías</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <button class="toggle" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema">☾</button>
+                <a class="btn ghost" href="JOAQUIN_RUIZ_CV_2.7-1.pdf" download>Descargar CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="top" class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker"><span class="k"></span> Web Developer & IT Support</div>
+                    <h1>Construyo soluciones web y redes estables para negocios reales</h1>
+                    <p class="sub">Técnico en soporte IT con experiencia en <strong>redes LAN/WiFi (MikroTik)</strong>,
+                        mantenimiento de sistemas y <strong>desarrollo web full‑stack</strong>. Apasionado por la
+                        automatización y los despliegues escalables (Docker, CI/CD) con enfoque en resultados.</p>
+                    <div class="hero-cta">
+                        <a class="btn" href="#proyectos">Ver proyectos</a>
+                        <a class="btn ghost" href="#contacto">Hablemos</a>
+                        <span class="pill" title="Ubicación">📍 Neuquén, Argentina</span>
+                        <span class="pill" title="Disponibilidad">🟢 Abierto a propuestas</span>
+                    </div>
+                    <div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap;">
+                        <a class="stat" href="https://github.com/JRproyects" target="_blank" rel="noreferrer noopener"
+                            aria-label="GitHub: JRproyects">🐙 GitHub/JRproyects</a>
+                        <a class="stat" href="https://www.linkedin.com/in/joaquin-ruiz-209145342" target="_blank"
+                            rel="noreferrer noopener" aria-label="LinkedIn de Joaquin Ruiz">💼 LinkedIn</a>
+                        <a class="stat" href="https://jrproyects.github.io/Portafolio/" target="_blank"
+                            rel="noreferrer noopener" aria-label="Portafolio anterior">🗂 Portafolio anterior</a>
+                    </div>
+                </div>
+                <div class="card hero-card" aria-label="Resumen">
+                    <div class="stat">🧰 Soporte técnico – After‑Wire (2024–presente)</div>
+                    <div class="stat">📡 MikroTik, LAN/WiFi, SD‑WAN</div>
+                    <div class="stat">🧪 Stack web: HTML, CSS, JS, PHP, Python</div>
+                    <div class="stat">🗄️ MySQL · Docker · GitHub Actions (CI/CD)</div>
+                    <div class="stat">🤖 Arduino (ESP32), MQTT</div>
+                    <div class="stat">☁️ AWS / Azure / GCP (inicial)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <div class="section-title">
+                <h2>Proyectos destacados</h2>
+                <p>Casos reales y prácticos, con foco en impacto.</p>
+            </div>
+            <div class="grid">
+                <article class="project card col-6">
+                    <h3>Diseño de red corporativa con MikroTik</h3>
+                    <p>Arquitectura y puesta en marcha de red segmentada para "X S.A.". Enrutamiento, VLANs, seguridad y
+                        alta disponibilidad para múltiples áreas.</p>
+                    <div class="tags">
+                        <span class="tag">MikroTik</span><span class="tag">VLAN</span><span
+                            class="tag">Firewall</span><span class="tag">DHCP</span><span class="tag">WiFi</span>
+                    </div>
+                </article>
+                <article class="project card col-6">
+                    <h3>Integración de WhatsApp Business API con Node.js</h3>
+                    <p>Automatización de mensajes y Webhooks en tiempo real. Gestión de tokens, ID de negocio y números
+                        desde Meta Developer Tools.</p>
+                    <div class="tags">
+                        <span class="tag">Node.js</span><span class="tag">Express</span><span
+                            class="tag">Webhooks</span><span class="tag">API REST</span>
+                    </div>
+                </article>
+                <article class="project card col-6">
+                    <h3>Tienda online para productos de mascotas</h3>
+                    <p>Maquetación y personalización con HTML/CSS/JS y funcionalidades con PHP. Propuesta escalable con
+                        dominio .com.ar y hosting propio.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span
+                            class="tag">JavaScript</span><span class="tag">PHP</span>
+                    </div>
+                </article>
+                <article class="project card col-6">
+                    <h3>Administración de Base de Datos (Trabajo final)</h3>
+                    <p>Diseño e implementación en MySQL para gestión eficiente y segura, aplicando normalización y
+                        consultas optimizadas.</p>
+                    <div class="tags">
+                        <span class="tag">MySQL</span><span class="tag">Modelado</span><span class="tag">SQL</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi">
+            <div class="section-title">
+                <h2>Sobre mí</h2>
+                <p>Un poco de quién soy y mi enfoque profesional.</p>
+            </div>
+
+            <div class="card sobre-mi">
+                <div class="texto">
+                    <p><strong>Nombre:</strong> Joaquín Ruiz</p>
+                    <p><strong>Especialidad:</strong> Desarrollador web full-stack y técnico en soporte IT</p>
+                    <p><strong>Propuesta de valor:</strong> Construyo soluciones digitales escalables y eficientes que
+                        impulsan negocios reales.</p>
+                    <p><strong>Motivación:</strong> Me apasiona la automatización y la optimización de procesos. Mi
+                        enfoque se centra en la implementación de soluciones robustas utilizando tecnologías como Docker
+                        y CI/CD.</p>
+                    <p><strong>Valores:</strong> Valoro la transparencia y la colaboración en equipo. Creo en el
+                        aprendizaje constante y en la adaptabilidad como claves para el éxito en el desarrollo
+                        tecnológico.</p>
+                    <p><strong>Intereses personales:</strong> En mi tiempo libre, disfruto de jugar al ajedrez puden
+                        encontrarme como <a href="https://lichess.org/@/rj46redd">rj46redd</a> y la programacion,
+                        actividades que complementan mi creatividad y atención al detalle.</p>
+                </div>
+
+                <div class="foto">
+                    <img src="img.jpg" alt="Foto de Joaquín Ruiz">
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section id="experiencia">
+            <div class="section-title">
+                <h2>Experiencia</h2>
+                <p>Soporte, redes y atención al cliente.</p>
+            </div>
+            <div class="timeline">
+                <div class="job card">
+                    <h3>After‑Wire · Soporte Técnico</h3>
+                    <small>11/2024 – Presente · Petrolero / Tecnología aplicada</small>
+                    <p>Configuración y mantenimiento de redes LAN/WiFi (Switches, Routers, APs, Firewalls, WLC) y SD‑WAN
+                        con MikroTik.</p>
+                </div>
+                <div class="job card">
+                    <h3>Hilton Garden Inn · Asistente de eventos / Mozo</h3>
+                    <small>05/2024 – 11/2024</small>
+                    <p>Apoyo en organización y ejecución de eventos, servicio al cliente y coordinación operativa.</p>
+                </div>
+                <div class="job card">
+                    <h3>Mackro · Cajero</h3>
+                    <small>02/2024 – 05/2024</small>
+                    <p>Manejo de efectivo, carga de datos y cierres de caja; gestión de planillas.</p>
+                </div>
+                <div class="job card">
+                    <h3>TLT S.A. · Auxiliar de maquinaria pesada</h3>
+                    <small>11/2021 – 05/2022</small>
+                    <p>Apoyo en mantenimiento y asistencia de equipos y maquinaria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="section-title">
+                <h2>Tecnologías y habilidades</h2>
+                <p>Conocimiento práctico y teórico en desarrollo y redes.</p>
+            </div>
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">PHP</span>
+                <span class="skill">Python</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">WordPress</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Git & GitHub Actions (CI/CD)</span>
+                <span class="skill">Linux (Ubuntu, Debian)</span>
+                <span class="skill">VirtualBox</span>
+                <span class="skill">Redes LAN/WiFi</span>
+                <span class="skill">MikroTik</span>
+                <span class="skill">Dude</span>
+                <span class="skill">Antivirus & Backup</span>
+                <span class="skill">Arduino (ESP32)</span>
+                <span class="skill">MQTT</span>
+                <span class="skill">AWS / Azure / GCP (inicial)</span>
+                <span class="skill">AutoCAD</span>
+                <span class="skill">SketchUp</span>
+                <span class="skill">Observium</span>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section id="educacion">
+            <div class="section-title">
+                <h2>Educación</h2>
+                <p>Formación académica y técnica</p>
+            </div>
+            <div class="timeline">
+                <div class="job card">
+                    <h3>Universidad Nacional del Comahue · Tecnicatura en Desarrollo Web</h3>
+                    <small>2023 – 2026 (previsto)</small>
+                    <p>Aprendizaje de HTML, CSS, JavaScript, PHP, bases de datos y metodologías ágiles de desarrollo.
+                    </p>
+                </div>
+                <div class="job card">
+                    <h3>Escuela Técnica · Técnico Agropecuario</h3>
+                    <small>2018 – 2022</small>
+                    <p>Conocimientos en producción agropecuaria, maquinaria y gestión de recursos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <p>¿Trabajamos juntos? Enviame un mensaje.</p>
+            </div>
+            <div class="grid">
+                <div class="card col-6" style="padding:18px;">
+                    <p>📧 <a href="mailto:rj45redd@gmail.com">rj45redd@gmail.com</a></p>
+                    <p>📞 <a href="tel:+542995490380">+54 299 549 0380</a></p>
+                    <p>🔗 <a href="https://www.linkedin.com/in/joaquin-ruiz-209145342" target="_blank"
+                            rel="noreferrer noopener">LinkedIn</a></p>
+                    <p>🔗 <a href="https://github.com/JRproyects" target="_blank" rel="noreferrer noopener">GitHub</a>
+                    </p>
+                    <p>🌐 <a href="https://jrproyects.github.io/Portafolio/" target="_blank"
+                            rel="noreferrer noopener">Portafolio anterior</a></p>
+                </div>
+                <form class="card col-6" style="padding:18px; display:grid; gap:10px;"
+                    action="https://formspree.io/f/xeolnqeo" method="POST">
+                    <label>Nombre<input required name="name" placeholder="Tu nombre"
+                            style="width:100%; margin-top:6px; padding:12px; border-radius:10px; border:1px solid var(--stroke); background:var(--panel); color:var(--text);"></label>
+                    <label>Email<input required type="email" name="email" placeholder="tu@email.com"
+                            style="width:100%; margin-top:6px; padding:12px; border-radius:10px; border:1px solid var(--stroke); background:var(--panel); color:var(--text);"></label>
+                    <label>Mensaje<textarea required name="message" rows="5" placeholder="Contame tu idea o proyecto"
+                            style="width:100%; margin-top:6px; padding:12px; border-radius:10px; border:1px solid var(--stroke); background:var(--panel); color:var(--text);"></textarea></label>
+                    <button class="btn" type="submit">Enviar</button>
+                    <small style="color:var(--muted);">Tip: reemplazá la acción del formulario por tu endpoint
+                        (Formspree, Netlify, backend propio).</small>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container"
+            style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+            <span>© <span id="year"></span> Joaquin Ruiz. Hecho con ♥ y mucho mate🧉.</span>
+            <div style="display:flex; gap:10px;">
+                <a class="pill" href="#top">↑ Volver arriba</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
